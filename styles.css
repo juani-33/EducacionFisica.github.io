@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #333 25%, #1e1e1e 100%);
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ff6600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.muscle-container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.muscle-group {
+    cursor: pointer;
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #333;
+    border: 2px solid #ff6600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.muscle-group:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+.muscle-details {
+    display: none;
+    padding: 10px 0;
+}
+
+.muscle-card {
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.muscle-card:hover {
+    transform: scale(1.05);
+    background-color: #444;
+}
+
+.muscle-card h3 {
+    font-size: 1.75rem;
+    color: #ff6600;
+    margin-bottom: 8px;
+}
+
+.muscle-description {
+    font-size: 1rem;
+    color: #bbbbbb;
+    margin-bottom: 15px;
+}
+
+.exercise-details {
+    display: none;
+    color: #dddddd;
+    margin-top: 10px;
+}
+
+.exercise-details p {
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+.calculator-container {
+    margin-top: 50px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.calculator-container h2 {
+    font-size: 1.8rem;
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+.calculator-container label,
+.calculator-container input,
+.calculator-container button {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.calculator-container input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.calculator-container button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculator-container button:hover {
+    background-color: #e55d00;
+}
+
+.calculator-container #result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.footer {
+    margin-top: 50px;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #888;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+}
+
+@media (max-width: 768px) {
+    .muscle-container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .muscle-group {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .muscle-card {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .calculator-container {
+        max-width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .muscle-group h2,
+    .calculator-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+}

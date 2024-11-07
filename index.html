@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios y Estiramientos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicios y Estiramientos de cada Músculo</h1>
+    </header>
+    <div class="muscle-container">
+        <div class="muscle-group" onclick="toggleGroup('trenSuperiorDetails')">
+            <h2>Tren Superior</h2>
+            <div id="trenSuperiorDetails" class="muscle-details">
+                <div class="muscle-card" onclick="toggleMuscle('pectorales', event)">
+                    <h3>Pectorales</h3>
+                    <p>Músculo principal del pecho, ayuda en movimientos de empuje.</p>
+                    <div id="pectorales" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Press de banca - Acuéstate en un banco y empuja la barra hacia arriba.</p>
+                        <p><strong>Estiramiento:</strong> Estiramiento en pared - Coloca el brazo en la pared y gira el torso en dirección opuesta.</p>
+                    </div>
+                </div>
+                <div class="muscle-card" onclick="toggleMuscle('deltoides', event)">
+                    <h3>Deltoides</h3>
+                    <p>Músculo en el hombro que permite levantar el brazo.</p>
+                    <div id="deltoides" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Elevación lateral - Eleva las mancuernas a los lados con los brazos rectos.</p>
+                        <p><strong>Estiramiento:</strong> Estiramiento cruzado - Lleva un brazo sobre el pecho y empuja con el otro.</p>
+                    </div>
+                </div>
+                <div class="muscle-card" onclick="toggleMuscle('biceps', event)">
+                    <h3>Bíceps</h3>
+                    <p>Músculo en la parte frontal del brazo, flexiona el codo.</p>
+                    <div id="biceps" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Curl de bíceps - Flexiona el brazo levantando una mancuerna hacia el hombro.</p>
+                        <p><strong>Estiramiento:</strong> Estiramiento en pared - Coloca la palma en la pared y rota el torso alejándote.</p>
+                    </div>
+                </div>
+                <div class="muscle-card" onclick="toggleMuscle('abdominales', event)">
+                    <h3>Abdominales</h3>
+                    <p>Músculos en el torso, ayudan en la flexión del tronco.</p>
+                    <div id="abdominales" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Crunch - Acuéstate y eleva el torso hacia las rodillas.</p>
+                        <p><strong>Estiramiento:</strong> Estiramiento de cobra - Boca abajo, empuja el torso hacia arriba con los brazos.</p>
+                    </div>
+                </div>
+                <div class="muscle-card" onclick="toggleMuscle('trapecios', event)">
+                    <h3>Trapecios</h3>
+                    <p>Músculo en la parte superior de la espalda, eleva los hombros.</p>
+                    <div id="trapecios" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Encogimiento de hombros - Sube y baja los hombros con una barra.</p>
+                        <p><strong>Estiramiento:</strong> Inclina la cabeza hacia un lado y empuja suavemente con la mano.</p>
+                    </div>
+                </div>
+                <div class="muscle-card" onclick="toggleMuscle('dorsales', event)">
+                    <h3>Dorsales</h3>
+                    <p>Músculo en la espalda que ayuda en la tracción.</p>
+                    <div id="dorsales" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Dominadas - Cuelga de una barra y súbete hasta que la barbilla la pase.</p>
+                        <p><strong>Estiramiento:</strong> Extiende un brazo hacia arriba y lateralmente inclina el torso.</p>
+                    </div>
+                </div>
+                <div class="muscle-card" onclick="toggleMuscle('triceps', event)">
+                    <h3>Tríceps</h3>
+                    <p>Músculo en la parte posterior del brazo, extiende el codo.</p>
+                    <div id="triceps" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Extensión de tríceps - Levanta una mancuerna por detrás de la cabeza y extiende.</p>
+                        <p><strong>Estiramiento:</strong> Lleva un brazo detrás de la cabeza y empuja con la otra mano.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="muscle-group" onclick="toggleGroup('trenInferiorDetails')">
+            <h2>Tren Inferior</h2>
+            <div id="trenInferiorDetails" class="muscle-details">
+                <div class="muscle-card" onclick="toggleMuscle('psoas', event)">
+                    <h3>Psoas</h3>
+                    <p>Músculo profundo de la cadera, flexiona y estabiliza.</p>
+                    <div id="psoas" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Elevación de piernas - Acuéstate y eleva las piernas rectas.</p>
+                        <p><strong>Estiramiento:</strong> Estocada baja - Lleva una pierna hacia adelante y baja la cadera.</p>
+                    </div>
+                </div>
+                <div class="muscle-card" onclick="toggleMuscle('aductores', event)">
+                    <h3>Aductores</h3>
+                    <p>Músculos en la parte interna del muslo, acercan las piernas.</p>
+                    <div id="aductores" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Aductores en máquina - Junta las piernas contra resistencia.</p>
+                        <p><strong>Estiramiento:</strong> Estiramiento de mariposa - Junta las plantas de los pies y baja las rodillas.</p>
+                    </div>
+                </div>
+                <div class="muscle-card" onclick="toggleMuscle('cuadriceps', event)">
+                    <h3>Cuádriceps</h3>
+                    <p>Músculo frontal del muslo, extiende la rodilla.</p>
+                    <div id="cuadriceps" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Sentadilla - Flexiona las rodillas manteniendo el torso recto.</p>
+                        <p><strong>Estiramiento:</strong> Agarra el pie trasero y acerca al glúteo.</p>
+                    </div>
+                </div>
+                <div class="muscle-card" onclick="toggleMuscle('lumbares', event)">
+                    <h3>Lumbares</h3>
+                    <p>Músculos en la parte baja de la espalda, sostienen el tronco.</p>
+                    <div id="lumbares" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Superman - Acostado boca abajo, eleva brazos y piernas.</p>
+                        <p><strong>Estiramiento:</strong> Estiramiento de niño - Arrodíllate y lleva el torso hacia adelante.</p>
+                    </div>
+                </div>
+                <div class="muscle-card" onclick="toggleMuscle('gluteos', event)">
+                    <h3>Glúteos</h3>
+                    <p>Músculo principal de la cadera, extiende y estabiliza.</p>
+                    <div id="gluteos" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Puente - Acostado, eleva las caderas hacia el techo.</p>
+                        <p><strong>Estiramiento:</strong> Cruza una pierna sobre la otra y tira del muslo opuesto.</p>
+                    </div>
+                </div>
+                <div class="muscle-card" onclick="toggleMuscle('isquiotibiales', event)">
+                    <h3>Isquiotibiales</h3>
+                    <p>Músculo trasero del muslo, ayuda en la flexión de rodilla.</p>
+                    <div id="isquiotibiales" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Peso muerto - Flexiona las caderas manteniendo la espalda recta.</p>
+                        <p><strong>Estiramiento:</strong> Inclínate hacia adelante con las piernas rectas.</p>
+                    </div>
+                </div>
+                <div class="muscle-card" onclick="toggleMuscle('gemelos', event)">
+                    <h3>Gemelos</h3>
+                    <p>Músculo de la pantorrilla, flexiona el pie.</p>
+                    <div id="gemelos" class="exercise-details">
+                        <p><strong>Ejercicio:</strong> Elevación de talones - Sube sobre los dedos de los pies.</p>
+                        <p><strong>Estiramiento:</strong> Estiramiento en escalón - Apoya los talones y baja lentamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="calculator-container">
+        <h2>Calculadora de Frecuencia Cardíaca Máxima</h2>
+        <label for="age">Introduce tu edad:</label>
+        <input type="number" id="age" min="1" max="120" placeholder="Edad" required>
+        <button onclick="calculateFCM()">Calcular</button>
+        <p id="result">Tu frecuencia cardíaca máxima es: --</p>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 | Integrantes: 5°C Lalli, Ledesma, Paganini, Zanini</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
